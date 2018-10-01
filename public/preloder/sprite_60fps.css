@@ -1,0 +1,22 @@
+@keyframes play96 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -9600px 0px;
+  }
+}
+
+
+.shapeshifter {
+  animation-duration: 1600ms;
+  animation-timing-function: steps(96);
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  
+}
+.shapeshifter.play {
+  animation-name: play96;
+  margin: 20% 50%;
+}

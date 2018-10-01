@@ -1,0 +1,134 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+body{
+  font-family: 'Bree Serif', serif;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #fff;
+  font-family: 'Coiny', cursive;
+}
+
+.top{
+  content:url("../img/top.svg");
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+
+/*text between hr */
+.hr-sect {
+	display: flex;
+	flex-basis: 100%;
+	align-items: center;
+	color: rgba(0, 0, 0, 0.35);
+  margin: 8px 0px;
+}
+.hr-sect::before,
+.hr-sect::after {
+	content: "";
+	flex-grow: 1;
+	background: rgba(0, 0, 0, 0.35);
+	height: 1px;
+	font-size: 0px;
+	line-height: 4px;
+	margin: 0px 8px;
+}
+
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  top: 40%;
+  left: 2%;
+  width: 35%;
+  color: #fff;
+  font-family: 'Coiny', cursive;
+  font-size: 2rem;
+}
+.bottom-left >p
+{
+  font-size: 1.5rem;
+  color: #000000;
+}
+ 
+
+.resopnsive{
+  width: 100%;
+}
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #295da0;
+}
+ 
+.brand-logo >img{
+  margin-top: 7px;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+  /* Bottom left text */
+.bottom-left {
+  position: absolute;
+  top: 17%;
+  left: 2%;
+  width: 35%;
+  color: #fff;
+  font-family: 'Coiny', cursive;
+  font-size: 1.1rem;
+}
+.bottom-left >p
+{
+  font-size: 0.7rem;
+  color: #000000;
+}
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+  
+  .top{
+    content:url("../img/Design.svg");
+    width: 100%;
+  }
+  
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
